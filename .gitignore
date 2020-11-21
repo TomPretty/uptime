@@ -4,6 +4,9 @@ node_modules
 ### build ###
 dist
 
+### eslint ###
+.eslintcache
+
 ### vscode ###
 .vscode/*
 !.vscode/settings.json
