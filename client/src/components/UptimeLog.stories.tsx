@@ -6,6 +6,9 @@ import { UptimeLog, UptimeLogProps } from "./UptimeLog";
 export default {
   title: "components/UptimeLog",
   component: UptimeLog,
+  args: {
+    displayName: "Weather display",
+  },
 } as Meta;
 
 const Template: Story<UptimeLogProps> = (args) => <UptimeLog {...args} />;
