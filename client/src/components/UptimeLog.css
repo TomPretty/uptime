@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header--name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header--status {
+  font-size: 14px;
+}
+
+.header--status--ok {
+  color: var(--green-success);
+}
+
+.status-bars-container {
+  position: relative;
+  margin-top: 8px;
+}
+
+.status-bars-container svg {
+  width: 100%;
+}
+
+.status-bar--ok {
+  fill: var(--green-success);
+}
+
+.status-bar--warn {
+  fill: var(--yellow-warn);
+}
+
+.status-bar--error {
+  fill: var(--red-error);
+}
+
+.tooltip-container {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 90%);
+}
+
+.status-meta {
+  position: relative;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.status-meta * + * {
+  margin-left: 8px;
+}
+
+.status-meta--line {
+  border-top: 1px solid #9ca3af;
+  flex-grow: 1;
+}
+
+.status-meta--uptime {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 0 4px;
+}
